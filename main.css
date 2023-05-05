@@ -120,6 +120,8 @@ main div:hover > .explanation {
   position: absolute;
   opacity: 0;
   pointer-events: none;
+  background: white;
+  z-index: 999;
   
   left: 100%;
   top: 100%;
