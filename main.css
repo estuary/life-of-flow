@@ -1,0 +1,129 @@
+main {
+  max-width: 700px;
+  padding-top: 2rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: center;
+}
+
+main div {
+  position: relative;
+}
+
+main div p {
+  text-align: center;
+}
+
+.captures, .materializations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  align-self: flex-start;
+}
+
+.processing {
+  height: 200px;
+}
+
+.derivations-and-collections {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  margin-top: 2rem;
+}
+
+.collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.documents {
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  width: 50px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.documents::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+  transform: translate(-5px, -5px);
+}
+
+.documents::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 50px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+  
+  transform: translate(-10px, -10px);
+}
+
+.connector {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.runtime {
+  padding: 2.5rem 7rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.derivations {
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+main div:hover > .explanation {
+  opacity: 1;
+  transform: translate(2px, 5px);
+}
+
+.explanation {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  
+  left: 100%;
+  top: 100%;
+  
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0 1rem;
+  border-top-left-radius: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: translate(0, 0);
+}
+
