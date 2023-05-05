@@ -1,5 +1,6 @@
 <head>
   <link rel='stylesheet' href='main.css' />
+  <link rel='stylesheet' href='dots.css' />
 </head>
 <script src="https://unpkg.com/konva@8/konva.min.js"></script>
 
@@ -15,6 +16,19 @@
     </div>
   </div>
 
+  <div class='captures-dots dots'>
+    <div>
+      <div class='top'></div>
+      <div class='top'></div>
+      <div class='top'></div>
+    </div>
+    <div>
+      <div class='bottom'></div>
+      <div class='bottom'></div>
+      <div class='bottom'></div>
+    </div>
+  </div>
+
   <div class='processing'>
     <div class='runtime'>
       <p>Flow Runtime</p>
@@ -27,26 +41,75 @@
     </div>
 
     <div class='derivations-and-collections'>
-      <div class='derivations'>
-        <p>Derivations</p>
+      <div class='derivations-and-dots'>
+        <div class='derivations-dots dots'>
+          <div>
+            <div class='left'></div>
+            <div class='left'></div>
+            <div class='left'></div>
+          </div>
+          <div>
+            <div class='right'></div>
+            <div class='right'></div>
+            <div class='right'></div>
+          </div>
+        </div>
+        <div class='derivations'>
+          <p>Derivations</p>
 
-        <div class='explanation'>
-          <p>
-            Derivations transform data...
-          </p>
+          <div class='explanation'>
+            <p>
+              Derivations transform data...
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class='collections'>
-        <p>Your collections</p>
-        <div class='documents'></div>
-
-        <div class='explanation'>
-          <p>
-            Collections are JSON documents stored in your storage bucket
-          </p>
+      <div class='derivations-to-collections-dots dots'>
+        <div>
+          <div class='top'></div>
+          <div class='top'></div>
+          <div class='top'></div>
         </div>
       </div>
+
+      <div class='collections-and-dots'>
+        <div class='collections-dots dots'>
+          <div>
+            <div class='left'></div>
+            <div class='left'></div>
+            <div class='left'></div>
+          </div>
+          <div>
+            <div class='right'></div>
+            <div class='right'></div>
+            <div class='right'></div>
+          </div>
+        </div>
+        <div class='collections'>
+          <p>Your collections</p>
+          <div class='documents'></div>
+
+          <div class='explanation'>
+            <p>
+              Collections are JSON documents stored in your storage bucket
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='materializations-dots dots'>
+    <div>
+      <div class='top'></div>
+      <div class='top'></div>
+      <div class='top'></div>
+    </div>
+    <div>
+      <div class='bottom'></div>
+      <div class='bottom'></div>
+      <div class='bottom'></div>
     </div>
   </div>
 
