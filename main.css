@@ -1,5 +1,5 @@
 main {
-  max-width: 700px;
+  max-width: 1200px;
   padding-top: 2rem;
 }
 
@@ -28,7 +28,8 @@ main div p {
 
 
 .processing {
-  height: 200px;
+  display: flex;
+  /*! height: 130px; */
 }
 
 .derivations-and-collections {
@@ -40,8 +41,13 @@ main div p {
 
 .derivations-and-dots, .collections-and-dots {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+}
+
+.collections-and-dots .collections-dots {
+  width: 80px;
 }
 
 .collections {
@@ -98,10 +104,12 @@ main div p {
 }
 
 .runtime {
-  padding: 2.5rem 7rem;
+  padding: 1rem 1rem;
   border: 1px solid black;
   border-radius: 20px;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .derivations {

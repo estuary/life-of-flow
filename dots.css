@@ -113,6 +113,36 @@
   top: 25px;
 }
 
+@keyframes dot-ltr {
+  0% { left: 0; top: 0; opacity: 0; }
+  50% { opacity: 1; }
+  100% { left: 100%; top: 0; opacity: 0; transform: translateX(-100%); }
+}
+
+.collections-dots {
+  height: 10px;
+  width: 80px;
+  align-self: center;
+}
+
+.collections {
+  margin-top: -30px;
+}
+
+.collections-dots .top:nth-child(1) {
+  animation: dot-ltr 1s infinite linear;
+}
+
+.collections-dots .top:nth-child(2) {
+  animation: dot-ltr 1s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.collections-dots .top:nth-child(3) {
+  animation: dot-ltr 1s infinite linear;
+  animation-delay: 0.6s;
+}
+
 @keyframes dot-left-tb {
   0% { left: 0; top: 100%; opacity: 0; transform: translateY(-100%); }
   50% { opacity: 1; }
@@ -125,7 +155,7 @@
   100% { right: 0; top: 100%; opacity: 0; transform: translateY(-100%); }
 }
 
-.derivations-dots, .collections-dots {
+.derivations-dots {
   width: 40%;
   height: 70px;
   margin-bottom: 5px;
@@ -135,30 +165,30 @@
   height: 130px;
 }
 
-.derivations-dots .left:nth-child(1), .collections-dots .left:nth-child(1) {
+.derivations-dots .left:nth-child(1) {
   animation: dot-left-tb 1s infinite linear;
 }
 
-.derivations-dots .left:nth-child(2), .collections-dots .left:nth-child(2) {
+.derivations-dots .left:nth-child(2) {
   animation: dot-left-tb 1s infinite linear;
   animation-delay: 0.3s;
 }
 
-.derivations-dots .left:nth-child(3), .collections-dots .left:nth-child(3) {
+.derivations-dots .left:nth-child(3) {
   animation: dot-left-tb 1s infinite linear;
   animation-delay: 0.6s;
 }
 
-.derivations-dots .right:nth-child(1), .collections-dots .right:nth-child(1) {
+.derivations-dots .right:nth-child(1) {
   animation: dot-right-tb 1s infinite linear;
 }
 
-.derivations-dots .right:nth-child(2), .collections-dots .right:nth-child(2) {
+.derivations-dots .right:nth-child(2) {
   animation: dot-right-tb 1s infinite linear;
   animation-delay: 0.3s;
 }
 
-.derivations-dots .right:nth-child(3), .collections-dots .right:nth-child(3) {
+.derivations-dots .right:nth-child(3) {
   animation: dot-right-tb 1s infinite linear;
   animation-delay: 0.6s;
 }
