@@ -1,6 +1,7 @@
 .diagram {
   max-width: 1200px;
   padding-top: 2rem;
+  font-family: sans-serif;
 }
 
 .diagram {
@@ -130,7 +131,8 @@
   pointer-events: none;
   background: white;
   z-index: 999;
-  
+  width: 180px;
+
   left: 100%;
   top: 100%;
   
@@ -142,3 +144,7 @@
   transform: translate(0, 0);
 }
 
+.explanation.explanation p {
+  text-align: left;
+  line-height: 1.2em;
+}
